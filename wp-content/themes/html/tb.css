@@ -1,0 +1,684 @@
+/* Global */
+
+* {}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, 
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, 
+font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, 
+dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, 
+thead, tr, th, td {
+    border: 0 none;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    vertical-align: baseline;
+	list-style: none;
+}
+
+body {
+	background: #0b4152 url('img/body-bg.jpg') repeat;
+	font-family: 'verdana';
+	font-size: 11px;
+	color: #2c2c2c;
+}
+
+h2 {
+	font-size: 20px;
+	color: #0b4152;
+	text-transform: uppercase;
+	margin: 20px 0;
+}
+
+p {
+	color: #2c2c2c;
+	padding: 20px 0px;
+	line-height: 18px;
+}
+
+strong {
+	font-weight: bold;
+}
+
+time {
+	font-size: 10px;
+	color: #d2d2d2;
+	text-transform: uppercase;
+}
+
+#wrap {
+	display: block;
+	position: relative;
+	width: 1100px;
+	margin: 0 auto;
+	padding: 0 37px;
+}
+
+/* Header */
+
+#header-wrap {
+	width: 100%;
+	background: #000;
+}
+
+#header {
+	display: block;
+	position: relative;
+	height: 74px;
+	background: #000 url('img/header-bg.jpg') no-repeat;
+	width: 1100px;
+	margin: 0 auto;
+}
+
+#logo {
+	display: block;
+	position: absolute;
+	padding: 18px 0 0 74px;
+	width: 177px;
+	height: 37px;
+}
+
+#logo a {
+	display: block;
+	background: url('img/header-logo.png') no-repeat;
+	text-indent: -999em;
+	width: 177px;
+	height: 37px;
+}
+
+#search {
+	display: block;
+	position: absolute;
+	width: 218px;
+	height: 33px;
+	right: 195px;
+	top: 22px;
+	background: url('img/header-search-bg.jpg') no-repeat;
+}
+
+#social {
+	display: block;
+	position: absolute;
+	right: 60px;
+	top: 30px;
+}
+
+#social ul li {
+	float: left;
+	margin-right: 15px;
+}
+
+/* Nav */
+
+#nav-wrap {
+	width: 100%;
+	background: #282828;
+}
+
+#nav {
+	display: block;
+	position: relative;
+	height: 40px;
+	margin: 0 auto;
+	width: 680px;
+}
+
+#nav ul {
+	width: 680px;
+	height: 40px;
+	margin: 0 auto;
+}
+
+#nav ul li {
+	float: left;
+	line-height: 35px;
+	height: 40px;
+	margin: 0 5px;
+}
+
+#nav ul li a {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 10.5px;
+	padding: 11px 15px 15px;
+	text-decoration: none;
+	text-shadow: 2px 2px 1px #000;
+}
+
+#nav ul li a.active, #nav ul li a:hover {
+	background: #16171a;
+	border-top: 6px solid #ed2528;
+}
+
+/* Home Content */
+
+#marquee-wrap {
+	width: 100%;
+	background: #000;
+}
+
+#marquee {
+	display: block;
+	position: relative;
+	width: 1100px;
+	height: 312px;
+	margin: 0 auto;
+}
+
+#home-content {
+	width: 950px;
+	margin: 20px auto;
+}
+
+#tweet {
+	display: block;
+	height: 50px;
+	margin-bottom: 20px;
+}
+
+#tweet-icon {
+	display: block;
+	float: left;
+	padding: 6px 28px 0 0;
+}
+
+#tweet-tb {
+	display: block;
+	float: left;
+	padding: 0 15px 0 0;
+}
+
+#twitter-handle {
+	display: block;
+	float: left;
+	line-height: 30px;
+	color: #fff;
+	font-size: 15px;
+	text-shadow: 2px 2px 2px #000;
+}
+
+#latest-tweet {
+	display: block;
+	float: left;
+	width: 650px;
+	font-size: 10px;
+	color: #fff;
+	margin: 5px 0 0 15px;
+	line-height: 18px;
+	text-shadow: 1px 1px 2px #000;
+}
+
+#latest-tweet a {
+	color: #ed2528;
+	text-shadow: 1px 1px 2px #000;
+	text-decoration: none;
+}
+
+#news-events {
+	display: block;
+	position: relative;
+	float: left;
+	width: 450px;
+	height: 275px;
+	background: #fff;
+	margin-right: 50px;
+	box-shadow: 0 22px 22px -10px #062129;
+}
+
+#news-events h2 {
+	color: #484848;
+	font-size: 13px;
+	margin: 25px 25px 20px;
+	text-transform: uppercase;
+}
+
+#news-events h3 {
+	width: 215px;
+	color: #484848;
+	font-size: 14px;
+	text-transform: uppercase;
+	margin: 0 25px;
+}
+
+#news-events .date {
+	font-size: 9px;
+	color: #484848;
+	text-transform: uppercase;
+	margin: 5px 25px;
+}
+
+#news-events p {
+	width: 215px;
+	padding: 10px 25px 0;
+	font-size: 10px;
+	color: #484848;
+	line-height: 18px;
+}
+
+.news-events-featured-image {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+#see-more {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+#bio {
+	display: block;
+	position: relative;
+	float: left;
+	width: 400px;
+	height: 225px;
+	background: #000 url('img/home-bio-bg.jpg') no-repeat;
+	box-shadow: 0 22px 22px -10px #062129;
+        padding: 25px;
+}
+
+#bio h2 {
+	color: #fff;
+	font-size: 13px;
+	margin: 0;
+        padding: 0 0 20px;
+	text-transform: uppercase;
+}
+
+#bio p {
+	width: 215px;
+	padding: 0 0 15px;
+	font-size: 10px;
+	color: #fff;
+	line-height: 18px;
+}
+
+#bio #learn-more {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+#quote {
+	display: block;
+	float: left;
+	height: 111px;
+	margin-top: 25px;
+	box-shadow: 0 22px 22px -10px #062129;
+}
+
+/* Internal Pages */
+
+.photo-bar-wrap {
+	background: #000;
+	width: 100%;	
+}
+
+.photo-bar {
+	display: block;
+	margin: 0 auto;
+	width: 1100px;
+	height: 101px;
+}
+
+.internal-content-wrap {
+	display: block;
+	width: 999px;
+	margin: 22px auto 0;
+	background: transparent;
+}
+
+.sidebar {
+	display: block;
+	float: left;
+	width: 200px;
+}
+
+/* Sub Nav */
+
+.sub-nav {
+	display: block;
+	width: 199px;
+	background: #fff url('img/sub-nav-bg.jpg') repeat-x bottom;
+	border-right: 1px solid #dae2e5;
+	font-size: 10.5px;
+	color: #000;
+	text-transform: uppercase;
+	padding: 0 0 10px;
+}
+
+.sub-nav ul {
+	padding: 24px 0 0;
+}
+
+.sub-nav ul li {
+	padding: 0 0 15px 30px;
+}
+
+.sub-nav ul li a {
+	color: #000;
+	text-decoration: none;
+}
+
+.sub-nav a.active {
+	font-size: 10.5px;
+	color: #e4322f;
+	font-weight: bold;
+}
+
+.sub-nav ul ul {
+	padding: 10px 0 0;
+}
+
+.sub-nav ul ul li {
+	padding: 5px 0 5px 5px;
+	font-size: 10.5px;
+	color: #0c4b5f;
+	font-style: italic;
+}
+
+.sub-nav ul ul li a {
+	 color: #0c4b5f;
+}
+
+.sub-nav ul ul li a.third-active {
+	 color: #ed2528;
+}
+
+.latest-tweets {
+	display: block;
+	width:200px;
+	background: #021e29 url('img/latest-tweets-bg.jpg') repeat-x center bottom 3px;
+	color: #fff;
+	font-size: 10px;
+	line-height: 18px;
+	padding: 0 0 20px 0;
+}
+
+.latest-tweets h3 {
+	display: block;
+	width: 200px;
+	height: 41px;
+	background: url('img/latest-tweets-header.png') no-repeat;
+	text-indent: -999em;
+}
+
+.latest-tweet {
+	margin: 20px 20px 0;
+	word-wrap: break-word;
+}
+
+.latest-tweet a {
+	color: #ed2528;
+	text-decoration: underline;
+}
+
+.internal-content {
+	display: block;
+	float: left;
+	width: 763px;
+	padding: 0 0 20px 36px;
+	background: #fff url('img/internal-bg.jpg') repeat-y;
+	box-shadow: 0 22px 22px -10px #062129;
+}
+
+.internal-bio-content {
+	display: block;
+	float: left;
+	width: 730px;
+	min-height: 487px;
+	padding: 25px 25px 0 36px;
+	background: #fff;
+	box-shadow: 0 22px 22px -10px #062129;
+}
+
+.internal-book-content {
+	display: block;
+	width: 899px;
+	padding: 50px;
+	background: #fff;
+	box-shadow: 0 22px 22px -10px #062129;
+}
+
+.center-content {
+	display: block;
+	float: left;
+	padding: 25px 36px 0 0;
+	width: 490px;
+	background: #fff;
+}
+
+.bread-crumbs {
+	display: block;
+	color: #535353;
+	font-size: 10.5px;
+	text-transform: uppercase;
+}
+
+.bread-crumbs a {
+	display: inline-block;
+	color: #535353;
+	text-decoration: underline;
+	margin: 0 10px 0 0;
+}
+
+.content-cta {
+	display: block;
+	position: relative;
+}
+
+h3.photo-header {
+	font-size: 24px;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 3px 9px;
+	background: #ed2528;
+}
+
+h3.photo-header-event {
+	font-size: 18px;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 3px 20px 3px 9px;
+	background: url("img/icon-calendar.png") no-repeat bottom 12px right 15px #ED2528;
+}
+
+.cta-btn {
+	display: block;
+	position: absolute;
+	bottom: 4px;
+	right: 0;
+}
+
+.right-rail {
+	display: block;
+	float: left;
+	width: 237px;
+	height: 100%;
+	padding: 0;
+	background: #000;
+	color: #fff;
+}
+
+.right-rail-content {
+	padding: 25px;	
+}
+
+h3.blog-header {
+	background: url('img/blog-feed-header.jpg') no-repeat;
+	text-indent: -999em;
+	height: 25px;
+}
+
+.blog-feed p {
+	padding: 0 0 5px;
+}
+
+.blog-feed p a {
+	text-transform: uppercase;
+	color: #d2d2d2;
+	text-decoration: underline;
+	font-size: 14px;
+}
+
+.blog-feed time {
+    display: block;
+    margin: 0 0 20px; 
+}
+
+.blog-date {
+        display: block;
+	color: #ed2528;
+	font-style: italic;
+	font-size: 12px;
+        text-transform: none;
+        padding: 20px 0 0;
+}
+
+/* Book */
+
+.book-left {
+	display: block;
+	float: left;
+	padding: 0 40px 0 0;
+}
+
+.book-right {
+	display: block;
+	float: left;
+	width: 580px;
+}
+
+.testimonial {
+	width: 580px;
+	text-align: right;
+	padding: 0 0 20px;
+}
+
+.testimonial p {
+	text-align: left;
+	color: #ed2528;
+	padding-bottom: 0;
+}
+
+span.testimonial-author {
+	color: #ed2528;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 0 10px 20px;
+	line-height: 18px;
+}
+
+.summary {
+	display: block;
+	width: 300px;
+	float: left;
+	padding: 0 25px 0 0;
+}
+
+.book-links {
+	display: block;
+	float: left;
+	margin: 15px 0;
+}
+
+.book-links ul li {
+	background-image: url('img/spade-small.png');
+	background-repeat: no-repeat;
+	background-position: left;
+    margin: 5px 0 5px 40px;
+	padding: 2px 0;
+	padding-left: 22px;
+}
+
+.book-links a {
+	color: #ed2528;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+/* Footer */
+
+#footer {
+	display: block;
+	position: relative;
+	width: 100%;
+	margin: 35px 0 0;
+	background: #08313f;
+}
+
+#footer-nav {
+	display: block;
+	position: relative;
+	background: #08313f;
+	width: 1100px;
+	height: 70px;
+	margin: 0 auto;
+}
+
+#footer-nav ul {
+	width: 680px;
+	height: 70px;
+	margin: 0 auto;
+}
+
+#footer-nav ul li {
+	float: left;
+	line-height: 46px;
+	height: 70px;
+	margin: 0 5px;
+}
+
+#footer-nav ul li a {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 10.5px;
+	padding: 16px 15px 39px;
+	text-decoration: none;
+	text-shadow: 2px 2px 1px #000;
+}
+
+#footer-nav ul li a.active, #footer-nav ul li a:hover {
+	background: #16171a;
+	border-top: 11px solid #ed2528;
+}
+
+#copyright {
+	display: block;
+	position: absolute;
+	left: 47%;
+	bottom: 0;
+}
+
+#copyright p {
+	font-size: 10px;
+	color: #fff;
+}
+
+/* Fonts */
+
+@font-face {  
+ 	font-family: 'proximanova-light-webfont'; 
+	src: url('../fonts/proximanova-light-webfont.eot'); 
+	src: url('../fonts/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'), 
+	url('../fonts/proximanova-light-webfont.woff') format('woff'), 
+	url('../fonts/proximanova-light-webfont.ttf') format('truetype'), 
+	url('../fonts/proximanova-light-webfont.svg#anivers_regular-webfont') format('svg'); 
+}
+
+
+
+
+
+
+
+
+
+
+
